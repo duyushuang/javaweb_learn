@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+		<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+		<constant name="struts.enable.SlashesInActionNames" value="true"/>
+		<constant name="struts.devMode" value="true" />
+         <!-- 指定每次请求到达，重新加载资源文件 -->
+        <constant name="struts.i18n.reload" value="true"/>
+        <!-- 指定每次配置文件更改后，自动重新加载 -->
+         <constant name="struts.configuration.xml.reload" value="true"/>
+        <!-- 把主题配置为simple -->
+        <constant name="struts.ui.theme" value="simple"/>
+         <package name="Struts" extends="struts-default" namespace="/">
+         <action name="login" class="com.ikoalabear.newfirst.LoginAction">
+             <result name="success">/success.jsp</result>
+         </action>
+         </package>
+</struts>

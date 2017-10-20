@@ -2,6 +2,7 @@
     <wb-module deploy-name="NewFirst">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/WEB-INF/class"/>
         <property name="context-root" value="NewFirst"/>
         <property name="java-output-path" value="/NewFirst/build/classes"/>
     </wb-module>
