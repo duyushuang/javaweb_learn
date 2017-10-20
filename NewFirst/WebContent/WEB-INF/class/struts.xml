@@ -14,7 +14,7 @@
         <constant name="struts.ui.theme" value="simple"/>
          <package name="Struts" extends="struts-default" namespace="/">
          <action name="login" class="com.ikoalabear.newfirst.LoginAction">
-             <result name="success">/success.jsp</result>
+             <result name="success">success.jsp</result>
          </action>
          </package>
 </struts>
